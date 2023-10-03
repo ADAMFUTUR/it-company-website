@@ -2,23 +2,20 @@
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  font-family: 'Handjet',sans-serif;
-  }
-
-#video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the video covers the entire viewport */
-  z-index: -1; /* Place the video behind the content */
+  /* Remove or modify the following line to allow scrolling */
+  /* overflow: hidden; */
+  overflow-x: hidden;
+  font-family: 'Handjet', sans-serif;
+  background-image: url("bgg.png");
+  background-repeat: no-repeat;
+  background-size: 1400px ;
 }
+
+
+
 
 .content {
   position: relative;
-  z-index: 1; /* Ensure the content appears above the video */
   text-align: center;
   padding: 20px;
   color: #000000; /* Set text color for the content */
@@ -40,7 +37,7 @@ a {
 }
 
 .header {
-  background-color: #36aa59;
+  background-color: #ffffff;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -64,7 +61,7 @@ a {
 
 /* Hero Section */
 .home {
-  color: #14a066;
+  color: #ffffff;
   text-align: center;
   padding: 6rem 0;
 }
@@ -77,7 +74,7 @@ a {
 .home h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #c7905c;
+  color: #a6e6ff;
 }
 
 /* About Section */
@@ -89,16 +86,18 @@ a {
 .about .heading {
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: #00bfff;
+  color: #ffffff;
 }
 
 .about h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .about p {
   font-size: 1.1rem;
+  background-color: #fff;
 }
 
 .about .btn {
